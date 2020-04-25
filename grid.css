@@ -1,0 +1,91 @@
+.linha,.coluna{
+	box-sizing: border-box;
+}
+
+.linha:before, .linha:after{
+	content: " ";
+	display: table;
+}
+
+.linha:after{
+	clear: both;
+}
+
+.area{
+	display: grid;
+}
+
+.coluna{
+	position: relative;
+	float: left;
+}
+
+.coluna01{
+	width: 8.333333333333333%;
+}
+
+.coluna02{
+	width: 16.66666666666667%;
+}
+
+.coluna03{
+	width: 25%;
+}
+
+.coluna04{
+	width: 33.33333333333333%;
+}
+
+.coluna05{
+	width: 41.66666666666667%;
+}
+
+.coluna06{
+	width: 50%;
+}
+
+.coluna07{
+	width: 58.33333333333333%;
+}
+
+.coluna08{
+	width: 66.66666666666666%;
+}
+
+.coluna09{
+	width: 75%;
+}
+
+.coluna10{
+	width: 83.33333333333333%;
+}
+
+.coluna11{
+	width: 91.66666666666666%;
+}
+
+.coluna12{
+	width: 100%;
+}
+
+@media only screen and (max-width: 550px) {
+  .coluna01,
+  .coluna02,
+  .coluna03,
+  .coluna04,
+  .coluna05,
+  .coluna06,
+  .coluna07,
+  .coluna08,
+  .coluna09,
+  .coluna10,
+  .coluna11,
+  .coluna12 {
+    width: auto;
+    float: none;
+  }
+
+  .column + .column {
+    margin-left: 0;
+  }
+}
